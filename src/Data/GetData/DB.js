@@ -8,7 +8,7 @@ export const GetAllSales = async () => {
     return response.data.values
   } catch (error) {
     return {
-      error: error.response.data.message,
+      error: error.response.data,
       message: 'Error',
     }
   }
@@ -21,7 +21,7 @@ export const GetOneSale = async (id) => {
     return response.data
   } catch (error) {
     return {
-      error: error.response.data.message,
+      error: error.response.data,
       message: 'Error',
     }
   }
@@ -33,7 +33,7 @@ export const addMayorista = async (data) => {
     return response.data
   } catch (error) {
     return {
-      error: error.response.data.message,
+      error: error.response.data,
       message: 'Error',
     }
   }
@@ -45,7 +45,7 @@ export const ordersMeli = async (date) => {
     return response.data
   } catch (error) {
     return {
-      error: error.response.data.message,
+      error: error.response.data,
       message: 'Error',
     }
   }
@@ -57,7 +57,7 @@ export const ordersTN = async (from) => {
     return response.data
   } catch (error) {
     return {
-      error: error.response.data.message,
+      error: error.response.data,
       message: 'Error',
     }
   }
@@ -69,7 +69,7 @@ export const udpateDB = async () => {
     return response.data
   } catch (error) {
     return {
-      error: error.response.data.message,
+      error: error.response.data,
       message: 'Error',
     }
   }
@@ -81,7 +81,7 @@ export const addRegalo = async (data) => {
     return response.data
   } catch (error) {
     return {
-      error: error.response.data.message,
+      error: error.response.data,
       message: 'Error',
     }
   }
@@ -93,7 +93,7 @@ export const addPersonal = async (data) => {
     return response.data
   } catch (error) {
     return {
-      error: error.response.data.message,
+      error: error.response.data,
       message: 'Error',
     }
   }
